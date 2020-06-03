@@ -1,0 +1,15 @@
+.controls-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  /* grid container config */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#start_stop i {
+  margin-right: 15px;
+}

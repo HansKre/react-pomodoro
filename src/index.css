@@ -7,7 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  margin-top: 0; /* remove default margins */
+  margin-bottom: 0; /* remove default margins */
+  min-height: 25%; /* avoid dropping height to 0 for empty p-tags */
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  color: gray;
 }

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
+      format("embedded-opentype"),
+      url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
+      format("woff2"),
+      url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
+      format("woff"),
+      url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
+      format("truetype"),
+      url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
+      format("svg");
+}
+
+.timer-container {
+  font-family: 'Righteous';
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  /* grid container config */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  /* Nice, round borders */
+  border-color: aliceblue;
+  border-style: solid;
+  border-radius: 20%;
+  border-width: 5px;
+}
+
+.timer-label {
+  font-size: 45px;
+}
+
+.time-left {
+  font-size: 75px;
+  font-family: digital;
+  padding-top: 10px;
+}

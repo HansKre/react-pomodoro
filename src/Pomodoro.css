@@ -1,0 +1,31 @@
+/* https://www.joomlashack.com/blog/tutorials/center-and-align-items-in-css-grid/ */
+.pomodoro-grid-container {
+  height: 70vh;
+  width: 75vw;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  background-color:#2e323a;
+  border-radius: 1%;
+  box-shadow: 0 0 10px whitesmoke;
+  /* grid container config */
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 2 columns */
+  grid-template-rows: repeat(3, 1fr); /* 6 rows, each occupying 1 equal fraction of the available free space; note, that free space is calculated after! any non-flexible items*/
+  grid-gap: 0px;
+  padding: 10px; /* visual distance from the boarder */
+}
+
+/* avoid getting to wide on desktop and landscape */
+@media screen and (min-width: 600px) {
+  .pomodoro-grid-container {
+    max-width: 60vh;
+  }
+}
+
+@media screen and (max-aspect-ratio: 4/7) {
+  .pomodoro-grid-container {
+    max-height: 60vh;
+    height: 60vh;
+  }
+}
