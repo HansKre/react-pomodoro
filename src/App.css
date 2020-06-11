@@ -14,10 +14,11 @@
 }
 
 .App-header {
+  box-sizing: border-box;
   background-color: #282c34;
-  /* min-height: 100vh; */
   min-height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
   min-height: calc(var(--vh, 1vh) * 100); /* --vh is calculated in App.js */
+  max-height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   align-items: center;

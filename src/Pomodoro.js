@@ -200,7 +200,7 @@ export default class Pomodoro extends React.Component {
         <Timer isSession={this.state.isSession} current={this.timeString()}></Timer>
         <Controls handleClickStartStop={this.toggleCountDown} handleClickReset={this.resetCountDown}></Controls>
         <audio id='beep' preload='auto' type='audio/mpeg'
-          src='http://soundbible.com/mp3/dixie-horn_daniel-simion.mp3'
+          src='https://pomodoro4711.s3.eu-central-1.amazonaws.com/Censored_Beep-Mastercard-569981218.mp3'
           ref={(audio) => { this.audioBeep = audio; }} />
       </div>
     );

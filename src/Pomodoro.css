@@ -1,6 +1,6 @@
 /* https://www.joomlashack.com/blog/tutorials/center-and-align-items-in-css-grid/ */
 .pomodoro-grid-container {
-  height: 70vh;
+  height: calc(var(--vh, 1vh) * 70);;
   width: 75vw;
   border-style: solid;
   border-width: 3px;
@@ -25,7 +25,7 @@
 
 @media screen and (max-aspect-ratio: 4/7) {
   .pomodoro-grid-container {
-    max-height: 60vh;
-    height: 60vh;
+    max-height: calc(var(--vh, 1vh) * 60);;
+    height: calc(var(--vh, 1vh) * 60);;
   }
 }
